@@ -7,13 +7,12 @@ const checkForm = (event) => {
 	if (emailInputEl.value === "" || passwordInputEl.value === "") {
 		alert("Proszę uzupełnić wszystkie pola!");
 	} else {
-		const {
-			elements: { email, password }
-		} = event.currentTarget;
+		const email = emailInputEl.value;
+		const password = passwordInputEl.value;
 	}
 };
 
-btnEl.addEventListener("click", (e) => {
+btnEl.addEventListener("submit", (e) => {
 	e.preventDefault();
 	checkForm(e);
 });
