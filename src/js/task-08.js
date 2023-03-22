@@ -17,7 +17,7 @@ const checkForm = (event) => {
 	}
 };
 
-btnEl.addEventListener("submit", (e) => {
+btnEl.addEventListener("click", (e) => {
 	e.preventDefault();
 	checkForm(e);
 });
